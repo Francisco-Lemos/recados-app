@@ -1,0 +1,31 @@
+{{> header}}
+{{> nav}}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <img src="" alt="">
+            <form method="POST" action="http://localhost:3000/include" enctype="multipart/form-data">
+                <div class="input-group mb-3 row">
+                    <div class="mb-2 col-4">
+                        <label for="formFileSm" class="form-label">Foto</label>
+                        <input class="form-control form-control" id="formFileSm" type="file" name='foto'>
+                    </div>
+                    <div class="col-6">
+                        <label>Nome</label>
+                        <input type="text" name='nome' class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group col">
+                        <span class="input-group-text">Recado</span>
+                        <textarea class="form-control" aria-label="With textarea" name='recado'></textarea>
+                    </div>
+                    <div class="col-auto mt-3">
+                        <button type="submit" class="btn btn-primary mb-3">Postar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{{> footer}}
