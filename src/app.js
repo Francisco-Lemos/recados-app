@@ -3,7 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 const { load_messages, write_message } = require('./notes');
 const app = express();
-
+//Comentário de teste
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
